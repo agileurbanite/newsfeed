@@ -1,9 +1,6 @@
 steal(
-	'newsfeed/feed/create',
 	'newsfeed/feed/list',
 	'./models/fixtures/fixtures.js',
-function(FeedCreate, FeedList){
-	
+function(FeedList){
 	new FeedList('.feeds');
-	new FeedCreate('#create');
 })
