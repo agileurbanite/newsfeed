@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>newsfeed/feed/list Demo</title>
+        <style type='text/css'>
+            body {font-family: verdana}
+        </style>
+	</head>
+	<body>
+	    <h1>newsfeed/feed/list Demo</h1>
+		<ul id='feeds'></ul>
+		<a href='javascript://' id='create'>Create Feed</a>
+		<script type='text/javascript' 
+                src='../../../steal/steal.js'>
+        </script>
+		<script type='text/javascript'>
+			steal(
+				'newsfeed/feed/list', 
+				'newsfeed/models/feed.js',
+          		'newsfeed/models/fixtures',
+          		function(FeedList, Feed){
+				
+				new FeedList('#feeds');
+				
+				$('#create').click(function(){
+					new Feed({
+						name: "Grilled Cheese",
+						description: "Bread and Cheese"
+					}).save();
+				})
+			})
+		</script>
+	</body>
+</html>

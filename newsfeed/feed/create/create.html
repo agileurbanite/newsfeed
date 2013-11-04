@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>newsfeed/feed/create</title>
+        <style type='text/css'>
+            body {font-family: verdana}
+        </style>
+	</head>
+	<body>
+	    <h1>newsfeed/feed/create Demo</h1>
+		<form id='create' action=''></form>
+		<div id='feeds'></div>
+		<script type='text/javascript' 
+                src='../../../steal/steal.js'>
+        </script>
+		<script type='text/javascript'>
+		steal(
+			'newsfeed/feed/create',
+			'newsfeed/models/feed.js',
+          	'newsfeed/models/fixtures',
+          	function(FeedCreate, Feed){
+				
+				new FeedCreate('#create');
+				Feed.bind('created', function(ev, feed){
+					$('<div>').html("<h3>"+feed.name+"</h3><p>"+feed.description+"</p>")
+					        .appendTo( $('#feeds') )
+				})
+				
+			})
+		</script>
+	</body>
+</html>

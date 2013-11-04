@@ -1,0 +1,9 @@
+//Modules and variables
+@import "modules/all";
+body {
+	font-size: 16px;
+}
+.feeds {
+	background: $nvestly-grey-1;
+}
+@import "partials/feed";

@@ -1,0 +1,10 @@
+<% this.each(function(current) { %>
+	<div class="feed" <%= (el) -> el.data('feed', current) %>>
+	  <div class="profile">
+	    <img src="http://placehold.it/50x50" alt="Profile Picture" />
+	  </div>
+	  <div class="post">
+			<%== can.view.render('newsfeed/feed/list/views/' + current.attr('type') + '.ejs', {current: current}) %>
+	  </div>
+	</div>
+<% }) %>

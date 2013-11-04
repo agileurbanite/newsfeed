@@ -1,0 +1,132 @@
+[
+    {
+        "type": "trade",
+        "trade": {
+            "user": "samplejoe",
+            "TradeID": "25",
+            "tradeDate": "2013-10-01",
+            "price": "27.2500000000",
+            "ticker": "XIV",
+            "tradetype": "sell",
+            "message": "Woot! Hella money",
+            "rally": {
+                "total": "0"
+            }
+        }
+    },
+    {
+        "type": "follow",
+        "follow": {
+            "user": "otavio",
+            "following": "TheRealMarlonFuentes"
+        }
+    },
+    {
+        "type": "like",
+        "like": {
+            "user": "ludaxkris",
+            "post": {
+                "postID": "152",
+                "SourceUser": "samplejoe",
+                "DestinationUser": "samplejoe",
+                "message": "This is a test",
+                "rally": {
+                    "total": "1",
+                    "recentUsers": {
+                        "user": "samplejoe"
+                    }
+                },
+                "recent": {
+                    "comment": {
+                        "user": "ludaxkris",
+                        "message": "this is a test comment",
+                        "rally": {
+                            "total": "0"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "post",
+        "post": {
+            "postID": "152",
+            "SourceUser": "samplejoe",
+            "DestinationUser": "samplejoe",
+            "message": "This is a test",
+            "rally": {
+                "total": "1",
+                "recentUsers": {
+                    "user": "samplejoe"
+                }
+            },
+            "recent": {
+                "comment": {
+                    "user": "ludaxkris",
+                    "message": "this is a test comment",
+                    "rally": {
+                        "total": "0"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "follow",
+        "follow": {
+            "user": "otavio",
+            "following": "elaine.lai.9400"
+        }
+    },
+    {
+        "type": "comment",
+        "comment": {
+            "user": "samplejoe",
+            "post": {
+                "postID": "140",
+                "SourceUser": "samplejoe",
+                "DestinationUser": "otavio",
+                "message": "Looking at EZPW and wondering your opinion on it. Trading at u003c1x revenue with ~20% 3-year CAGR.",
+                "rally": {
+                    "total": "0"
+                }
+            }
+        }
+    },
+    {
+        "type": "comment",
+        "comment": {
+            "user": "samplejoe",
+            "post": {
+                "postID": "138",
+                "SourceUser": "samplejoe",
+                "DestinationUser": "otavio",
+                "message": "I currently hold WFM and have been a decent gain on it. I have a hard time finding an exit point. Any stop limits you recommend?",
+                "rally": {
+                    "total": "0"
+                }
+            }
+        }
+    },
+    {
+        "type": "follow",
+        "follow": {
+            "user": "otavio",
+            "following": "blacksandgroup"
+        }
+    },
+    {
+        "type": "follow",
+        "follow": {
+            "user": "samplejoe",
+            "following": "otavio"
+        }
+    },
+    {
+        "type": "like",
+        "like": {
+            "user": "kash"
+        }
+    }
+]

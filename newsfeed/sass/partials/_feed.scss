@@ -1,0 +1,58 @@
+.feed {
+	display: block;
+	.profile, .post, .commented-msg, .comment-form {
+		display: inline-block;
+		padding: 10px;
+		vertical-align: top;
+	}
+	.profile {
+		width: 50px;
+		margin: 0 15px;
+	}
+	.post {
+		p {
+			margin: 0 0 0.875em 0;
+			.user {
+				font-weight: bold;
+				&.postedon {
+					&:before {
+						display: inline-block;
+						content: "";
+						width: 0; 
+						height: 0; 
+						border-top: 5px solid transparent;
+						border-bottom: 5px solid transparent;
+						border-left:5px solid $nvestly-grey-2;
+						margin: 0 10px 0 5px;
+					}
+				}
+			}
+		}
+		a {
+			color: $nvestly-blue-1;
+			text-decoration: none;
+			&.rally-link {
+				font-size: 0.75em;
+				margin-bottom: 1em;
+				display: block;
+			}
+		}
+		.post-feedback {
+			border: 1px solid $nvestly-grey-3;
+			background: $nvestly-white;
+			.rally, .comments {
+				padding: 0.875em;
+			}
+			.rally {
+				border-bottom: 1px solid $nvestly-grey-3;
+			}
+			.comments {
+				ul {
+					list-style: none;
+					margin: 0;
+					padding: 0;
+				}
+			}
+		}
+	}
+}
