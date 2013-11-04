@@ -1,0 +1,26 @@
+<div class="comments">
+  <ul>
+    <% current.post.recent.each(function(comment) { %>
+	    <li>
+	      <div class="commented">
+	        <div class="profile">
+	          <img src="http://placehold.it/50x50" alt="Profile Picture" />
+	        </div>
+	        <div class="commented-msg">
+	          <p><span class="user"><%= comment.attr('user') %></span></p>
+	          <p><%= comment.attr('message') %></p>
+	          <a href="#" class="rally-link">Rally</a>
+	        </div>
+	      </div>
+	    </li>
+    <% }) %>
+  </ul>
+  <div class="comment">
+    <div class="profile">
+      <img src="http://placehold.it/50x50" alt="Profile Picture" />
+    </div>
+    <div class="comment-form">
+      <textarea value="Write a comment..." placeholder="Write a comment..." title="Write a comment..." class="comment-text" name="add_comment_text_text">Write a comment...</textarea>
+    </div>
+  </div>
+</div>
