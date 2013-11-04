@@ -1,9 +1,9 @@
-<p><span class="user"><%= current.attr('type') %></span> <span class="user postedon">Otavio Dalarossa</span></p>
-<p><span class="post-message">I currently hold WFM and have seen a decent gain on it.  I have a hard time finding an exit point.  Any stop limits you recommend?</span></p>
+<p><span class="user"><%= current.attr('comment.post.SourceUser') %></span> <span class="user postedon"><%= current.attr('comment.post.DestinationUser') %></span></p>
+<p><span class="post-message"><%= current.attr('comment.post.message') %></span></p>
 <a href="#" class="rally-link">Rally</a>
 <div class="post-feedback">
   <div class="rally">
-    <span class="ralliers"><a href="#" class="count">0 rallied</a> this post</span>
+    <span class="ralliers"><a href="#" class="count"><%= current.attr('comment.post.rally.total') %> rallied</a> this post</span>
   </div>
   <div class="comments">
     <ul>

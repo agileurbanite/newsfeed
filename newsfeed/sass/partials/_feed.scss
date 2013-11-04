@@ -14,6 +14,7 @@
 			margin: 0 0 0.875em 0;
 			.user {
 				font-weight: bold;
+				text-transform: capitalize;
 				&.postedon {
 					&:before {
 						display: inline-block;

@@ -13,18 +13,18 @@ body { font-size: 16px; }
 /* line 13, ../sass/partials/_feed.scss */
 .feed .post p { margin: 0 0 0.875em 0; }
 /* line 15, ../sass/partials/_feed.scss */
-.feed .post p .user { font-weight: bold; }
-/* line 18, ../sass/partials/_feed.scss */
+.feed .post p .user { font-weight: bold; text-transform: capitalize; }
+/* line 19, ../sass/partials/_feed.scss */
 .feed .post p .user.postedon:before { display: inline-block; content: ""; width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid #888888; margin: 0 10px 0 5px; }
-/* line 31, ../sass/partials/_feed.scss */
+/* line 32, ../sass/partials/_feed.scss */
 .feed .post a { color: #00bbe4; text-decoration: none; }
-/* line 34, ../sass/partials/_feed.scss */
+/* line 35, ../sass/partials/_feed.scss */
 .feed .post a.rally-link { font-size: 0.75em; margin-bottom: 1em; display: block; }
-/* line 40, ../sass/partials/_feed.scss */
+/* line 41, ../sass/partials/_feed.scss */
 .feed .post .post-feedback { border: 1px solid #dfdfdf; background: white; }
-/* line 43, ../sass/partials/_feed.scss */
+/* line 44, ../sass/partials/_feed.scss */
 .feed .post .post-feedback .rally, .feed .post .post-feedback .comments { padding: 0.875em; }
-/* line 46, ../sass/partials/_feed.scss */
+/* line 47, ../sass/partials/_feed.scss */
 .feed .post .post-feedback .rally { border-bottom: 1px solid #dfdfdf; }
-/* line 50, ../sass/partials/_feed.scss */
+/* line 51, ../sass/partials/_feed.scss */
 .feed .post .post-feedback .comments ul { list-style: none; margin: 0; padding: 0; }
