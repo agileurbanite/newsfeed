@@ -13,7 +13,9 @@ steal('can', function (can) {
 		/**
  		 * Find all feeds
 		 */
-		findAll : "GET /feeds",
+		findAll : function(params) {
+      return $.get("/GetNewsFeedGet", params);
+    },
 		/**
  		 * Find one feed
 		 */

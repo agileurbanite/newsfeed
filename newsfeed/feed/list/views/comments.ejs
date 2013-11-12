@@ -1,23 +1,43 @@
 <div class="comments">
   <ul>
-    <% current.post.recent.each(function(comment) { %>
-	    <li>
-	      <div class="commented">
-	        <div class="profile">
-	          <img src="http://placehold.it/50x50" alt="Profile Picture" />
-	        </div>
-	        <div class="commented-msg">
-	          <p><span class="user"><%= comment.attr('user') %></span></p>
-	          <p><%= comment.attr('message') %></p>
-	          <a href="#" class="rally-link">Rally</a>
-	        </div>
-	      </div>
-	    </li>
-    <% }) %>
+    <% if (current.post && current.post.recentComment) {
+      if (typeof current.post.recentComment !== 'object') {
+      current.post.recentComment.each(function(comment) { %>
+        <li class="<%= comment.attr('postID') %>">
+          <div class="commented">
+            <div class="profile">
+              <!--img src="/images/<%= comment.attr('user.username') %>?size=30" alt="Profile Picture" /-->
+              <img src="http://placehold.it/30x30" />
+            </div>
+            <div class="commented-msg">
+              <p><span class="user"><a href="/<%=comment.attr('user.username') %>"><%= comment.attr('user.fullname') %></a></span></p>
+              <p><%= comment.attr('message') %></p>
+              <a href="#" class="rally-link">Rally</a>
+            </div>
+          </div>
+        </li>
+      <% });
+      } else { %>
+        <li class="<%= current.post.recentComment.attr('postID') %>">
+          <div class="commented">
+            <div class="profile">
+              <!--img src="/images/<%= current.post.recentComment.attr('user.username') %>?size=30" alt="Profile Picture" /-->
+              <img src="http://placehold.it/30x30" />
+            </div>
+            <div class="commented-msg">
+              <p><span class="user"><a href="/<%=current.post.recentComment.attr('user.username') %>"><%= current.post.recentComment.attr('user.fullname') %></a></span></p>
+              <p><%= current.post.recentComment.attr('message') %></p>
+              <a href="#" class="rally-link">Rally</a>
+            </div>
+          </div>
+        </li>
+      <% }
+    } %>
   </ul>
   <div class="comment">
     <div class="profile">
-      <img src="http://placehold.it/50x50" alt="Profile Picture" />
+      <!--img src="/images/me?size=30" alt="Profile Picture" /-->
+      <img src="http://placehold.it/30x30" />
     </div>
     <div class="comment-form">
       <textarea value="Write a comment..." placeholder="Write a comment..." title="Write a comment..." class="comment-text" name="add_comment_text_text">Write a comment...</textarea>

@@ -1,30 +1,10 @@
-<p><span class="user"><%= current.attr('comment.post.SourceUser') %></span> <span class="user postedon"><%= current.attr('comment.post.DestinationUser') %></span></p>
-<p><span class="post-message"><%= current.attr('comment.post.message') %></span></p>
-<a href="#" class="rally-link">Rally</a>
-<div class="post-feedback">
-  <div class="rally">
-    <span class="ralliers"><a href="#" class="count"><%= current.attr('comment.post.rally.total') %> rallied</a> this post</span>
+<div class="feed" <%= (el) -> el.data('feed', current) %>>
+  <div class="profile">
+    <!--img src="/images/<%= current.attr('comment.user.username') %>" alt="Profile Picture" /-->
+    <img src="http://placehold.it/50x50" />
   </div>
-  <div class="comments">
-    <ul>
-      <li>
-        <div class="commented">
-          <div class="profile">
-            <img src="http://placehold.it/50x50" alt="Profile Picture" />
-          </div>
-          <div class="commented-msg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dictum lorem velit, id iaculis magna tempus vitae. Curabitur placerat erat a turpis consectetur ultrices.
-          </div>
-        </div>
-      </li>
-    </ul>
-    <div class="comment">
-      <div class="profile">
-        <img src="http://placehold.it/50x50" alt="Profile Picture" />
-      </div>
-      <div class="comment-form">
-        <textarea value="Write a comment..." placeholder="Write a comment..." title="Write a comment..." class="comment-text" name="add_comment_text_text">Write a comment...</textarea>
-      </div>
-    </div>
+  <div class="post">
+    <p><span class="user"><a href="<%= current.attr('comment.user.username') %>"><%= current.attr('comment.user.fullname') %></a></span> commented on a post</p>
+    <%== can.view.render('newsfeed/feed/list/views/post-sub.ejs', {current: current.comment}) %>
   </div>
 </div>

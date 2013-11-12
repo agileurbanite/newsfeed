@@ -1,0 +1,456 @@
+[
+    {
+        "type": "trade",
+        "NewsFeedId": "885",
+        "post": {
+            "user": {
+                "fullname": "Otávio Dalarossa",
+                "username": "otavio"
+            },
+            "postID": "181",
+            "type": "trade",
+            "trade": {
+                "tradeDate": "2013-11-07",
+                "price": "48.1799000000",
+                "ticker": "FB",
+                "tradetype": "buy"
+            },
+            "date": "2013-11-11T10:28:34.407",
+            "message": "First batch! Target $100",
+            "rally": {
+                "total": "0"
+            }
+        }
+    },
+    {
+        "type": "follow",
+        "NewsFeedId": "872",
+        "follow": {
+            "user": {
+                "fullname": "Otávio Dalarossa",
+                "username": "otavio"
+            },
+            "following": {
+                "fullname": "Yan Zhang",
+                "username": "yanzhang"
+            },
+            "date": "2013-11-11T10:18:11.593"
+        }
+    },
+    {
+        "type": "follow",
+        "NewsFeedId": "859",
+        "follow": {
+            "user": {
+                "fullname": "Otávio Dalarossa",
+                "username": "otavio"
+            },
+            "following": {
+                "fullname": "Patrick Woo",
+                "username": "agileurbanite"
+            },
+            "date": "2013-11-11T10:01:36.310"
+        }
+    },
+    {
+        "type": "like",
+        "NewsFeedId": "846",
+        "like": {
+            "user": {
+                "fullname": "Sample Joe",
+                "username": "samplejoe"
+            },
+            "date": "2013-11-10T23:44:02.670",
+            "post": {
+                "postID": "179",
+                "type": "post",
+                "SourceUser": {
+                    "fullname": "Sample Joe",
+                    "username": "samplejoe"
+                },
+                "DestinationUser": {
+                    "fullname": "Sample Joe",
+                    "username": "samplejoe"
+                },
+                "date": "2013-11-10T23:06:04.030",
+                "message": "This is a test",
+                "rally": {
+                    "total": "1",
+                    "recentUsers": {
+                        "fullname": "Sample Joe",
+                        "username": "samplejoe"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "comment",
+        "NewsFeedId": "835",
+        "comment": {
+            "user": {
+                "fullname": "Sample Joe",
+                "username": "samplejoe"
+            },
+            "post": {
+                "postID": "158",
+                "type": "post",
+                "SourceUser": {
+                    "fullname": "Sample Joe",
+                    "username": "samplejoe"
+                },
+                "DestinationUser": {
+                    "fullname": "Sample Joe",
+                    "username": "samplejoe"
+                },
+                "date": "2013-11-04T10:38:02.260",
+                "message": "I'm also going to be writing a lot of unncessary comments and posts that will fill up your wall",
+                "rally": {
+                    "total": "2",
+                    "recentUsers": [
+                        {
+                            "fullname": "Sample Joe",
+                            "username": "samplejoe"
+                        },
+                        {
+                            "fullname": "Sample Joe",
+                            "username": "samplejoe"
+                        }
+                    ]
+                },
+                "recentComment": [
+                    {
+                        "user": {
+                            "fullname": "Sample Joe",
+                            "username": "samplejoe"
+                        },
+                        "postID": "159",
+                        "date": "2013-11-04T10:38:23.183",
+                        "message": "Or just sample data like so",
+                        "rally": {
+                            "total": "0"
+                        }
+                    },
+                    {
+                        "user": {
+                            "fullname": "Sample Joe",
+                            "username": "samplejoe"
+                        },
+                        "postID": "160",
+                        "date": "2013-11-04T10:38:45.693",
+                        "message": "Patrick, this should be an array of comments",
+                        "rally": {
+                            "total": "0"
+                        }
+                    },
+                    {
+                        "user": {
+                            "fullname": "Chris Tung",
+                            "username": "ludaxkris"
+                        },
+                        "postID": "161",
+                        "date": "2013-11-04T10:39:40.650",
+                        "message": "More comments from different people",
+                        "rally": {
+                            "total": "0"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "type": "post",
+        "NewsFeedId": "824",
+        "post": {
+            "postID": "179",
+            "SourceUser": {
+                "fullname": "Sample Joe",
+                "username": "samplejoe"
+            },
+            "DestinationUser": {
+                "fullname": "Sample Joe",
+                "username": "samplejoe"
+            },
+            "date": "2013-11-10T23:06:04.030",
+            "message": "This is a test",
+            "rally": {
+                "total": "1",
+                "recentUsers": {
+                    "fullname": "Sample Joe",
+                    "username": "samplejoe"
+                }
+            }
+        }
+    },
+    {
+        "type": "comment",
+        "NewsFeedId": "813",
+        "comment": {
+            "user": {
+                "fullname": "Sample Joe",
+                "username": "samplejoe"
+            },
+            "post": {
+                "postID": "158",
+                "type": "post",
+                "SourceUser": {
+                    "fullname": "Sample Joe",
+                    "username": "samplejoe"
+                },
+                "DestinationUser": {
+                    "fullname": "Sample Joe",
+                    "username": "samplejoe"
+                },
+                "date": "2013-11-04T10:38:02.260",
+                "message": "I'm also going to be writing a lot of unncessary comments and posts that will fill up your wall",
+                "rally": {
+                    "total": "2",
+                    "recentUsers": [
+                        {
+                            "fullname": "Sample Joe",
+                            "username": "samplejoe"
+                        },
+                        {
+                            "fullname": "Sample Joe",
+                            "username": "samplejoe"
+                        }
+                    ]
+                },
+                "recentComment": [
+                    {
+                        "user": {
+                            "fullname": "Sample Joe",
+                            "username": "samplejoe"
+                        },
+                        "postID": "159",
+                        "date": "2013-11-04T10:38:23.183",
+                        "message": "Or just sample data like so",
+                        "rally": {
+                            "total": "0"
+                        }
+                    },
+                    {
+                        "user": {
+                            "fullname": "Sample Joe",
+                            "username": "samplejoe"
+                        },
+                        "postID": "160",
+                        "date": "2013-11-04T10:38:45.693",
+                        "message": "Patrick, this should be an array of comments",
+                        "rally": {
+                            "total": "0"
+                        }
+                    },
+                    {
+                        "user": {
+                            "fullname": "Chris Tung",
+                            "username": "ludaxkris"
+                        },
+                        "postID": "161",
+                        "date": "2013-11-04T10:39:40.650",
+                        "message": "More comments from different people",
+                        "rally": {
+                            "total": "0"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "type": "comment",
+        "NewsFeedId": "802",
+        "comment": {
+            "user": {
+                "fullname": "Sample Joe",
+                "username": "samplejoe"
+            },
+            "post": {
+                "postID": "158",
+                "type": "post",
+                "SourceUser": {
+                    "fullname": "Sample Joe",
+                    "username": "samplejoe"
+                },
+                "DestinationUser": {
+                    "fullname": "Sample Joe",
+                    "username": "samplejoe"
+                },
+                "date": "2013-11-04T10:38:02.260",
+                "message": "I'm also going to be writing a lot of unncessary comments and posts that will fill up your wall",
+                "rally": {
+                    "total": "2",
+                    "recentUsers": [
+                        {
+                            "fullname": "Sample Joe",
+                            "username": "samplejoe"
+                        },
+                        {
+                            "fullname": "Sample Joe",
+                            "username": "samplejoe"
+                        }
+                    ]
+                },
+                "recentComment": [
+                    {
+                        "user": {
+                            "fullname": "Sample Joe",
+                            "username": "samplejoe"
+                        },
+                        "postID": "159",
+                        "date": "2013-11-04T10:38:23.183",
+                        "message": "Or just sample data like so",
+                        "rally": {
+                            "total": "0"
+                        }
+                    },
+                    {
+                        "user": {
+                            "fullname": "Sample Joe",
+                            "username": "samplejoe"
+                        },
+                        "postID": "160",
+                        "date": "2013-11-04T10:38:45.693",
+                        "message": "Patrick, this should be an array of comments",
+                        "rally": {
+                            "total": "0"
+                        }
+                    },
+                    {
+                        "user": {
+                            "fullname": "Chris Tung",
+                            "username": "ludaxkris"
+                        },
+                        "postID": "161",
+                        "date": "2013-11-04T10:39:40.650",
+                        "message": "More comments from different people",
+                        "rally": {
+                            "total": "0"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "type": "comment",
+        "NewsFeedId": "791",
+        "comment": {
+            "user": {
+                "fullname": "Sample Joe",
+                "username": "samplejoe"
+            },
+            "post": {
+                "postID": "158",
+                "type": "post",
+                "SourceUser": {
+                    "fullname": "Sample Joe",
+                    "username": "samplejoe"
+                },
+                "DestinationUser": {
+                    "fullname": "Sample Joe",
+                    "username": "samplejoe"
+                },
+                "date": "2013-11-04T10:38:02.260",
+                "message": "I'm also going to be writing a lot of unncessary comments and posts that will fill up your wall",
+                "rally": {
+                    "total": "2",
+                    "recentUsers": [
+                        {
+                            "fullname": "Sample Joe",
+                            "username": "samplejoe"
+                        },
+                        {
+                            "fullname": "Sample Joe",
+                            "username": "samplejoe"
+                        }
+                    ]
+                },
+                "recentComment": [
+                    {
+                        "user": {
+                            "fullname": "Sample Joe",
+                            "username": "samplejoe"
+                        },
+                        "postID": "159",
+                        "date": "2013-11-04T10:38:23.183",
+                        "message": "Or just sample data like so",
+                        "rally": {
+                            "total": "0"
+                        }
+                    },
+                    {
+                        "user": {
+                            "fullname": "Sample Joe",
+                            "username": "samplejoe"
+                        },
+                        "postID": "160",
+                        "date": "2013-11-04T10:38:45.693",
+                        "message": "Patrick, this should be an array of comments",
+                        "rally": {
+                            "total": "0"
+                        }
+                    },
+                    {
+                        "user": {
+                            "fullname": "Chris Tung",
+                            "username": "ludaxkris"
+                        },
+                        "postID": "161",
+                        "date": "2013-11-04T10:39:40.650",
+                        "message": "More comments from different people",
+                        "rally": {
+                            "total": "0"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "type": "follow",
+        "NewsFeedId": "780",
+        "follow": {
+            "user": {
+                "fullname": "Otávio Dalarossa",
+                "username": "otavio"
+            },
+            "following": {
+                "fullname": "Ye Tian",
+                "username": "ty890218"
+            },
+            "date": "2013-11-10T20:42:26.977"
+        }
+    },
+    {
+        "type": "follow",
+        "NewsFeedId": "767",
+        "follow": {
+            "user": {
+                "fullname": "Otávio Dalarossa",
+                "username": "otavio"
+            },
+            "following": {
+                "fullname": "Blacksand Group",
+                "username": "blacksandgroup"
+            },
+            "date": "2013-11-10T15:17:04.307"
+        }
+    },
+    {
+        "type": "follow",
+        "NewsFeedId": "754",
+        "follow": {
+            "user": {
+                "fullname": "Otávio Dalarossa",
+                "username": "otavio"
+            },
+            "following": {
+                "fullname": "Jane Vu",
+                "username": "laneyvu"
+            },
+            "date": "2013-11-09T14:11:08.523"
+        }
+    }
+]

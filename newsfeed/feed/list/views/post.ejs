@@ -1,9 +1,17 @@
-<p><span class="user"><%= current.attr('post.SourceUser') %></span> <span class="user postedon"><%= current.attr('post.DestinationUser') %></span></p>
-<p><span class="post-message"><%= current.attr('post.message') %></span></p>
-<a href="#" class="rally-link">Rally</a>
-<div class="post-feedback">
-  <div class="rally">
-    <span class="ralliers"><a href="#" class="count"><%= current.attr('post.rally.total') %> rallied</a> this post</span>
+<div class="feed" <%= (el) -> el.data('feed', current) %>>
+  <div class="profile">
+    <!--img src="/images/<%= current.attr('post.user.username') %>" alt="Profile Picture" /-->
+    <img src="http://placehold.it/50x50" alt="Profile Picture" />
   </div>
-  <%== can.view.render('newsfeed/feed/list/views/comments.ejs', {current: current}) %>
+  <div class="post">
+    <p><span class="user"><%= current.attr('post.SourceUser.username') %></span> <span class="user postedon"><%= current.attr('post.DestinationUser.username') %></span></p>
+    <p><span class="post-message"><%= current.attr('post.message') %></span></p>
+    <a href="#" class="rally-link">Rally</a>
+    <div class="post-feedback">
+      <div class="rally">
+        <span class="ralliers"><a href="#" class="count"><%= current.attr('post.rally.total') %> rallied</a> this post</span>
+      </div>
+      <%== can.view.render('newsfeed/feed/list/views/comments.ejs', {current: current}) %>
+    </div>
+  </div>
 </div>

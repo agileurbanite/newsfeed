@@ -9,7 +9,7 @@ steal("can/util/fixture", function(fixture) {
 	});
 	
 	fixture({
-		'GET /feeds' : "newsfeed/models/fixtures/newsfeed.json",
+		'GET /GetNewsFeedGet' : "newsfeed/models/fixtures/newsfeed2.json",
 		'GET /feeds/{id}' : store.findOne,
 		'POST /feeds' : store.create,
 		'PUT /feeds/{id}' : store.update,
