@@ -1,7 +1,7 @@
 <div class="comments">
   <ul>
     <% if (current.post && current.post.recentComment) {
-      if (typeof current.post.recentComment !== 'object') {
+      if (current.post.recentComment.length > 1) {
       current.post.recentComment.each(function(comment) { %>
         <li class="<%= comment.attr('postID') %>">
           <div class="commented">
