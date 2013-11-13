@@ -1,232 +1,31 @@
 [
     {
-        "type": "trade",
-        "NewsFeedId": "1202",
-        "post": {
+        "type": "like",
+        "NewsFeedId": "846",
+        "like": {
             "user": {
-                "fullname": "Otávio Dalarossa",
-                "username": "otavio"
+                "fullname": "Sample Joe",
+                "username": "samplejoe"
             },
-            "postID": "194",
-            "type": "trade",
-            "trade": {
-                "tradeDate": "2013-11-07",
-                "price": "48.1799000000",
-                "ticker": "FB",
-                "tradetype": "buy"
-            },
-            "date": "2013-11-11T21:19:04.117",
-            "message": "Initiating a position here, target $180",
-            "rally": {
-                "total": "0"
-            }
-        }
-    },
-    {
-        "type": "comment",
-        "NewsFeedId": "1185",
-        "comment": {
-            "user": {
-                "fullname": "Otávio Dalarossa",
-                "username": "otavio"
-            },
+            "date": "2013-11-10T23:44:02.670",
             "post": {
-                "postID": "124",
-                "type": "post",
-                "SourceUser": {
-                    "fullname": "Chris Tung",
-                    "username": "ludaxkris"
-                },
-                "DestinationUser": {
-                    "fullname": "Otávio Dalarossa",
-                    "username": "otavio"
-                },
-                "date": "2013-10-11T13:00:34.337",
-                "message": "You still holding on to $XIV?",
-                "rally": {
-                    "total": "1",
-                    "recentUsers": {
-                        "fullname": "Chris Tung",
-                        "username": "ludaxkris"
-                    }
-                },
-                "recentComment": [
-                    {
-                        "user": {
-                            "fullname": "Otávio Dalarossa",
-                            "username": "otavio"
-                        },
-                        "postID": "192",
-                        "date": "2013-11-11T21:14:36.200",
-                        "message": "Admittedly I exited too early. I'm still a bit scarred from VXX! Haha",
-                        "rally": {
-                            "total": "0"
-                        }
-                    },
-                    {
-                        "user": {
-                            "fullname": "Otávio Dalarossa",
-                            "username": "otavio"
-                        },
-                        "postID": "193",
-                        "date": "2013-11-11T21:17:56.690",
-                        "message": "Any VIX moves for you?",
-                        "rally": {
-                            "total": "0"
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "type": "comment",
-        "NewsFeedId": "1185",
-        "comment": {
-            "user": {
-                "fullname": "Otávio Dalarossa",
-                "username": "otavio"
-            },
-            "post": {
-                "postID": "124",
-                "type": "post",
-                "SourceUser": {
-                    "fullname": "Chris Tung",
-                    "username": "ludaxkris"
-                },
-                "DestinationUser": {
-                    "fullname": "Otávio Dalarossa",
-                    "username": "otavio"
-                },
-                "date": "2013-10-11T13:00:34.337",
-                "message": "You still holding on to $XIV?",
-                "rally": {
-                    "total": "1",
-                    "recentUsers": {
-                        "fullname": "Chris Tung",
-                        "username": "ludaxkris"
-                    }
-                },
-                "recentComment": [
-                    {
-                        "user": {
-                            "fullname": "Otávio Dalarossa",
-                            "username": "otavio"
-                        },
-                        "postID": "192",
-                        "date": "2013-11-11T21:14:36.200",
-                        "message": "Admittedly I exited too early. I'm still a bit scarred from VXX! Haha",
-                        "rally": {
-                            "total": "0"
-                        }
-                    },
-                    {
-                        "user": {
-                            "fullname": "Otávio Dalarossa",
-                            "username": "otavio"
-                        },
-                        "postID": "193",
-                        "date": "2013-11-11T21:17:56.690",
-                        "message": "Any VIX moves for you?",
-                        "rally": {
-                            "total": "0"
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "type": "comment",
-        "NewsFeedId": "1170",
-        "comment": {
-            "user": {
-                "fullname": "Otávio Dalarossa",
-                "username": "otavio"
-            },
-            "post": {
-                "postID": "124",
-                "type": "post",
-                "SourceUser": {
-                    "fullname": "Chris Tung",
-                    "username": "ludaxkris"
-                },
-                "DestinationUser": {
-                    "fullname": "Otávio Dalarossa",
-                    "username": "otavio"
-                },
-                "date": "2013-10-11T13:00:34.337",
-                "message": "You still holding on to $XIV?",
-                "rally": {
-                    "total": "1",
-                    "recentUsers": {
-                        "fullname": "Chris Tung",
-                        "username": "ludaxkris"
-                    }
-                },
-                "recentComment": [
-                    {
-                        "user": {
-                            "fullname": "Otávio Dalarossa",
-                            "username": "otavio"
-                        },
-                        "postID": "192",
-                        "date": "2013-11-11T21:14:36.200",
-                        "message": "Admittedly I exited too early. I'm still a bit scarred from VXX! Haha",
-                        "rally": {
-                            "total": "0"
-                        }
-                    },
-                    {
-                        "user": {
-                            "fullname": "Otávio Dalarossa",
-                            "username": "otavio"
-                        },
-                        "postID": "193",
-                        "date": "2013-11-11T21:17:56.690",
-                        "message": "Any VIX moves for you?",
-                        "rally": {
-                            "total": "0"
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "type": "comment",
-        "NewsFeedId": "1155",
-        "comment": {
-            "user": {
-                "fullname": "Otávio Dalarossa",
-                "username": "otavio"
-            },
-            "post": {
-                "postID": "138",
+                "postID": "179",
                 "type": "post",
                 "SourceUser": {
                     "fullname": "Sample Joe",
                     "username": "samplejoe"
                 },
                 "DestinationUser": {
-                    "fullname": "Otávio Dalarossa",
-                    "username": "otavio"
+                    "fullname": "Sample Joe",
+                    "username": "samplejoe"
                 },
-                "date": "2013-10-23T21:35:00.840",
-                "message": "I currently hold WFM and have been a decent gain on it. I have a hard time finding an exit point. Any stop limits you recommend?",
+                "date": "2013-11-10T23:06:04.030",
+                "message": "This is a test",
                 "rally": {
-                    "total": "0"
-                },
-                "recentComment": {
-                    "user": {
-                        "fullname": "Otávio Dalarossa",
-                        "username": "otavio"
-                    },
-                    "postID": "191",
-                    "date": "2013-11-11T21:12:55.210",
-                    "message": "Why exit? It's growing nicely. It tends to get overbought as earnings approach, but I for now the trend looks intact...",
-                    "rally": {
-                        "total": "0"
+                    "total": "1",
+                    "recentUsers": {
+                        "fullname": "Sample Joe",
+                        "username": "samplejoe"
                     }
                 }
             }

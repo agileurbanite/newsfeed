@@ -1,15 +1,15 @@
-<div class="feed" <%= (el) -> el.data('feed', current) %>>
+<div id="<%= current.NewsFeedId %>" class="feed" <%= (el) -> el.data('feed', current) %>>
   <div class="profile">
-    <!--img src="/images/<%= current.attr('post.user.username') %>" alt="Profile Picture" /-->
+    <!--img src="/images/<%= current.post.user.username %>" alt="Profile Picture" /-->
     <img src="http://placehold.it/50x50" />
   </div>
   <div class="post">
-    <p><span class="user"><a href="<%= current.attr('post.user.username') %>"><%= current.attr('post.user.fullname') %></a></span> <%= current.attr('post.trade.tradetype') %> <span class="user"><%= current.attr('post.trade.ticker') %></span> @ <%= Number(current.attr('post.trade.price')).toFixed(2) %> on <%= current.attr('post.trade.tradeDate') %></p>
-    <p><span class="post-message"><%= current.attr('post.message') %></span></p>
+    <p><span class="user"><a href="/<%= current.post.user.username %>"><%= current.post.user.fullname %></a></span> <%= current.post.trade.tradetype %> <span class="user"><%= current.post.trade.ticker %></span> @ <%= Number(current.post.trade.price).toFixed(2) %> on <%= current.post.trade.tradeDate %></p>
+    <p><span class="post-message"><%= current.post.message %></span></p>
     <a href="#" class="rally-link">Rally</a>
     <div class="post-feedback">
       <div class="rally">
-        <span class="ralliers"><a href="#" class="count"><%= current.attr('post.rally.total') %> rallied</a> this post</span>
+        <span class="ralliers"><a href="#" class="count"><%= current.post.rally.total %> rallied</a> this post</span>
       </div>
       <%== can.view.render('newsfeed/feed/list/views/comments.ejs', {current: current}) %>
     </div>

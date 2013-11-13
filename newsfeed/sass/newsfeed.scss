@@ -7,3 +7,8 @@ body {
 	background: $nvestly-grey-1;
 }
 @import "partials/feed";
+#loadmoreajaxloader {
+  display: none;
+  background: url('/images/ajax-loader.gif') no-repeat center center;
+  height: 32px;
+}

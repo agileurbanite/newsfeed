@@ -3,30 +3,30 @@
     <% if (current.post && current.post.recentComment) {
       if (current.post.recentComment.length > 1) {
       current.post.recentComment.each(function(comment) { %>
-        <li class="<%= comment.attr('postID') %>">
+        <li class="<%= comment.postID %>">
           <div class="commented">
             <div class="profile">
-              <!--img src="/images/<%= comment.attr('user.username') %>?size=30" alt="Profile Picture" /-->
+              <!--img src="/images/<%= comment.user.username %>?size=30" alt="Profile Picture" /-->
               <img src="http://placehold.it/30x30" />
             </div>
             <div class="commented-msg">
-              <p><span class="user"><a href="/<%=comment.attr('user.username') %>"><%= comment.attr('user.fullname') %></a></span></p>
-              <p><%= comment.attr('message') %></p>
+              <p><span class="user"><a href="/<%=comment.user.username %>"><%= comment.user.fullname %></a></span></p>
+              <p><%= comment.message %></p>
               <a href="#" class="rally-link">Rally</a>
             </div>
           </div>
         </li>
       <% });
       } else { %>
-        <li class="<%= current.post.recentComment.attr('postID') %>">
+        <li class="<%= current.post.recentComment.postID %>">
           <div class="commented">
             <div class="profile">
-              <!--img src="/images/<%= current.post.recentComment.attr('user.username') %>?size=30" alt="Profile Picture" /-->
+              <!--img src="/images/<%= current.post.recentComment.user.username %>?size=30" alt="Profile Picture" /-->
               <img src="http://placehold.it/30x30" />
             </div>
             <div class="commented-msg">
-              <p><span class="user"><a href="/<%=current.post.recentComment.attr('user.username') %>"><%= current.post.recentComment.attr('user.fullname') %></a></span></p>
-              <p><%= current.post.recentComment.attr('message') %></p>
+              <p><span class="user"><a href="/<%=current.post.recentComment.user.username %>"><%= current.post.recentComment.user.fullname %></a></span></p>
+              <p><%= current.post.recentComment.message %></p>
               <a href="#" class="rally-link">Rally</a>
             </div>
           </div>

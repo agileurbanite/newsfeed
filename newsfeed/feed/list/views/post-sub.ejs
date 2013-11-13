@@ -1,16 +1,16 @@
 <div class="feed" <%= (el) -> el.data('feed', current) %>>
   <div class="profile">
-    <!--img src="/images/<%= current.attr('post.SourceUser.username') %>?size=30" alt="Profile Picture" /-->
+    <!--img src="/images/<%= current.post.SourceUser.username %>?size=30" alt="Profile Picture" /-->
     <img src="http://placehold.it/30x30" />
   </div>
   <div class="post">
-    <div class="post-sub <%= current.attr('post.postID') %>">
-      <p><span class="user"><a href="<%= current.attr('post.SourceUser.username') %>"><%= current.attr('post.SourceUser.fullname') %></span> <span class="user postedon"><a href="<%= current.attr('post.DestinationUser.username') %>"><%= current.attr('post.DestinationUser.fullname') %></a></span></p>
-      <p><span class="post-message"><%= current.attr('post.message') %></span></p>
+    <div class="post-sub <%= current.post.postID %>">
+      <p><span class="user"><a href="<%= current.post.SourceUser.username %>"><%= current.post.SourceUser.fullname %></span> <span class="user postedon"><a href="<%= current.post.DestinationUser.username %>"><%= current.post.DestinationUser.fullname %></a></span></p>
+      <p><span class="post-message"><%= current.post.message %></span></p>
       <a href="#" class="rally-link">Rally</a>
       <div class="post-feedback">
         <div class="rally">
-          <span class="ralliers"><a href="#" class="count"><%= current.attr('post.rally.total') %> rallied</a> this post</span>
+          <span class="ralliers"><a href="#" class="count"><%= current.post.rally.total %> rallied</a> this post</span>
         </div>
         <%== can.view.render('newsfeed/feed/list/views/comments.ejs', {current: current}) %>
       </div>

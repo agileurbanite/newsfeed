@@ -7,9 +7,12 @@ steal('can', function (can) {
 	 *
 	 * Wraps backend feed services.
 	 */
-	return can.Model(
+	return can.Model('Feed',
 	/* @static */
 	{
+    beginId: 0,
+    take: 12,
+    imageUrlBase: '/images/',
 		/**
  		 * Find all feeds
 		 */

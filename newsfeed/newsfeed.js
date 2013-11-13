@@ -3,6 +3,15 @@ steal(
 	'./models/fixtures/fixtures.js',
 function(FeedList){
 	new FeedList('.feeds');
-}).then('newsfeed/vendor/waypoints.js', function() {
-  console.log('feeds loaded');
+}).then(function() {
+  $(window).scroll(function() {
+    if($(window).scrollTop() >= $(document).height() - $(window).height()) {
+      $('div#loadmoreajaxloader').show();
+      $('.feeds').addClass('loading');
+      if ($('.feeds').hasClass('loading')) {
+        $('.feeds').removeClass('loading');
+        $('body').trigger('feedlist');
+      }
+    }
+  });
 });

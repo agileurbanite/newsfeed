@@ -26,8 +26,20 @@ function (can, initEJS, Feed) {
       var self = this;
       this.list = new Feed.List();
       this.element.html(initEJS(this.list));
-      Feed.findAll({"beginId": 0, "take": 12}).done(function(response) {
+      Feed.findAll({"beginId": Feed.beginId, "take": Feed.take}).done(function(response) {
         self.list.replace(response);
+        Feed.beginId = $('.feeds .feed:last').attr('id');
+      });
+
+      // list append
+      $('body').bind('feedlist', function(ev, response) {
+        $.when(Feed.findAll({"beginId": Feed.beginId, "take": Feed.take})).then(function(response) {
+          $.each(response, function() {
+            self.list.push(this);
+          });
+          $('div#loadmoreajaxloader').hide();
+          Feed.beginId = $('.feeds .feed:last').attr('id');
+        });
       });
     },
     /**
